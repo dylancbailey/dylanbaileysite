@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Test</title>
+  <title>Dylan Bailey</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
@@ -16,12 +16,13 @@
     .test2 {
       background: #1E1E20;
     }
-    .test3 {
+    .portfolio {
       background: url(computer.jpg) center no-repeat fixed;
       background-size: cover;
       -webkit-filter: grayscale(100%);
       filter: grayscale(100%);
       height: 100vh;
+      color: white;
     }
     .name {
       border: 3px solid white;
@@ -54,12 +55,23 @@
     .navbar li a {
       color: white;
     }
-    .navbar li a:hover {
+    .navbar li a:hover, .navbar li a:active {
       background: rgba(255,255,50,.4);
     }
     .icon-bar {
       background: white;
     }
+    .port-button {
+      background: #1E1E20;
+      padding: 30px 50px;  
+      border-radius: 5%;
+    }
+    .classWithPad {
+      margin: 10px;
+      padding: 30px;
+    }
+
+
 
 
   </style>
@@ -79,8 +91,8 @@
       </div>
       <ul class='nav navbar-nav navbar-right collapse navbar-collapse text-right'>
         <li><a href='#'>Home</a></li>
-        <li><a href='#'>About</a></li>
-        <li><a href='#'>Portfolio</a></li>
+        <li><a href='#about'>About</a></li>
+        <li><a href='#portfolio'>Portfolio</a></li>
         <li><a href='#'>Contact</a></li>
       </ul>
     </nav>
@@ -93,7 +105,7 @@
   </div>
 </section>
 
-<section class="test2 vertical-center">
+<section class="test2 vertical-center" id="about">
   <div class="container">
     <div class="row">
       <p class="text-center">I am a 24 year old independent web developer and musician. I love to create, so I found myself dabbling in websites. I now possess knowledge to be able to work on almost any type of website. If you're itnerested in hiring me, <a>click here</a>. When I'm not working on a website, I find myself create music. If you enjoy laid back music, <a>click here</a> to check out some of the albums I've released. If you're wanting to contact me about potentially creating some music for you (for a game, an intro, etc) don't hesitate to contact me. Thank you for checking out my website! Hope to hear from you :)</p>
@@ -101,8 +113,20 @@
   </div>
 </section>
 
-<section class="test3">
-  
+<section class="portfolio vertical-center" id="portfolio">
+  <div class="container"> 
+    <div class="row"> 
+      <div class="col-md-4 text-center">
+        <h1 class="classWithPad port-button">Music</h1>
+      </div>
+      <div class="col-md-4 text-center">
+        <h1 class="classWithPad port-button">Websites</h1>
+      </div>
+      <div class="col-md-4 text-center">
+        <h1 class="classWithPad port-button">Github</h1>
+      </div>
+    </div>
+  </div>  
 </section>
 
 <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
