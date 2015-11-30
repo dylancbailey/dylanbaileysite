@@ -13,6 +13,10 @@
       height: 100vh;
     }
     .test2 {
+      background: #1E1E20;
+      height: 100vh;
+    }
+    .test3 {
       background: url(computer.jpg) center no-repeat fixed;
       background-size: cover;
       -webkit-filter: grayscale(100%);
@@ -25,13 +29,27 @@
       width: 300px;
       height: 100px;
     }
-    .container {
+    h4 {
+      color: white;
+      letter-spacing: 8px;
+    }
+    p {
+      color: white;
+    }
+    .logo {
       position: absolute;
       top:45%;
       left: 50%;
       -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
+    }
+
+    .vertical-center {
+      min-height: 100%;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
     }
 
   </style>
@@ -46,14 +64,23 @@
       <li>hi</li>
     </ul>
   </header>
-  <div class="container">
+  <div class="container logo">
     <div class="row">
       <h1 class="text-center center-block name">Dylan Bailey</h1>
+      <h4 class="text-center">Developer // Musician</h3>
     </div>
   </div>
 </section>
 
-<section class="test2">
+<section class="test2 vertical-center">
+  <div class="container">
+    <div class="row">
+      <p class="text-center">I am a 24 year old independent web developer and musician. I love to create, so I found myself dabbling in websites. I now possess knowledge to be able to work on almost any type of website. If you're itnerested in hiring me, <a>click here</a>. When I'm not working on a website, I find myself create music. If you enjoy laid back music, <a>click here</a> to check out some of the albums I've released. If you're wanting to contact me about potentially creating some music for you (for a game, an intro, etc) don't hesitate to contact me. Thank you for checking out my website! Hope to hear from you :)</p>
+    </div>
+  </div>
+</section>
+
+<section class="test3">
   
 </section>
 
