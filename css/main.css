@@ -1,5 +1,5 @@
     .test1 {
-      background: url(computer2.jpg) center no-repeat fixed;
+      background: url(../images/computer2.jpg) center no-repeat fixed;
       background-size: cover;
       -webkit-filter: grayscale(100%);
       filter: grayscale(100%);
@@ -9,7 +9,7 @@
       background: #1E1E20;
     }
     .portfolio {
-      background: url(computer.jpg) center no-repeat fixed;
+      background: url(../images/computer.jpg) center no-repeat fixed;
       background-size: cover;
       -webkit-filter: grayscale(100%);
       filter: grayscale(100%);
