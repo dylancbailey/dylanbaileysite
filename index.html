@@ -24,6 +24,23 @@
       height: 100vh;
       color: white;
     }
+    .contact {
+      background: #1E1E20;
+      height: 30vh;
+    }
+    .contact-container {
+      padding-top: 60px;
+    }
+    .contact ul li {
+      color: white;
+      margin-bottom: 15px;
+    }
+    .contact ul li:nth-child(1) {
+      padding-top: 15px;
+    }
+    .contact ul li a {
+      text-decoration: none;
+    }
     .name {
       border: 3px solid white;
       color: white;
@@ -37,6 +54,7 @@
     }
     p {
       color: white;
+      font-size: 18px;
     }
     .logo {
       position: absolute;
@@ -70,10 +88,13 @@
       margin: 10px;
       padding: 30px;
     }
+    #portfolio a {
+      color: white;
+    }
 
     @media screen and (max-width: 991px) {
       .classWithPad {
-        margin: 70px 0;
+        margin: 50px 0;
         padding: 30px 0;
       }
     }
@@ -98,7 +119,7 @@
         <li><a href='#'>Home</a></li>
         <li><a href='#about'>About</a></li>
         <li><a href='#portfolio'>Portfolio</a></li>
-        <li><a href='#'>Contact</a></li>
+        <li><a href='#contact'>Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -113,7 +134,7 @@
 <section class="test2 vertical-center" id="about">
   <div class="container">
     <div class="row">
-      <p class="text-center col-md-12 col-xs-12">I am a 24 year old independent web developer and musician. I love to create, so I found myself dabbling in websites. I now possess knowledge to be able to work on almost any type of website. If you're itnerested in hiring me, <a>click here</a>. When I'm not working on a website, I find myself create music. If you enjoy laid back music, <a>click here</a> to check out some of the albums I've released. If you're wanting to contact me about potentially creating some music for you (for a game, an intro, etc) don't hesitate to contact me. Thank you for checking out my website! Hope to hear from you :)</p>
+      <p class="text-center col-md-12 col-xs-12">I am a 24 year old independent web developer and musician. I love to create, so I found myself dabbling in websites. I now possess enough knowledge to be able to work on almost any type of website. If you're interested in hiring me, <a>click here</a>. When I'm not working on a website, I find myself creating music. If you enjoy laid back music, <a>click here</a> to check out some of the albums I've released. If you're wanting to contact me about potentially creating some music for you (for a game, an intro, etc) don't hesitate to <a>contact me</a>.</p>
     </div>
   </div>
 </section>
@@ -121,20 +142,61 @@
 <section class="portfolio vertical-center" id="portfolio">
   <div class="container"> 
     <div class="row"> 
-      <div class="col-xs-12 col-md-4 text-center">
-        <h1 class="classWithPad port-button">Music</h1>
-      </div>
-      <div class="col-xs-12 col-md-4 text-center">
-        <h1 class="classWithPad port-button">Websites</h1>
-      </div>
-      <div class="col-xs-12 col-md-4 text-center">
-        <h1 class="classWithPad port-button">Github</h1>
-      </div>
+      <a href="http://iamsleepless.bandcamp.com">
+        <div class="col-xs-12 col-md-4 text-center">
+          <h1 class="classWithPad port-button">Music</h1>
+        </div>
+      </a>
+      <a href="#">
+        <div class="col-xs-12 col-md-4 text-center">
+          <h1 class="classWithPad port-button">Websites</h1>
+        </div>
+      </a>
+      <a href="https://github.com/dylancbailey">
+        <div class="col-xs-12 col-md-4 text-center">
+          <h1 class="classWithPad port-button">Github</h1>
+        </div>
+      </a>
     </div>
   </div>  
 </section>
 
+<section class="contact" id="contact">
+  <div class="container contact-container">
+    <div class="row">
+      <div class="col-xs-6 text-center">
+        <h4>Navigation</h4>  
+        <ul class="list-unstyled">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-xs-6 text-center">
+        <h4>Social</h4>  
+        <ul class="list-unstyled">
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Youtube</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
 <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script>
+  $(document).ready(function() {
+
+    $(".port-button").hover(function() {
+      $(this).animate({
+        padding: "10%"
+      }, 1000);
+
+  });
+</script>
 </body>
 </html>
