@@ -1,9 +1,9 @@
-    .test1 {
+    .main {
       background: url(../images/computer2.jpg) center no-repeat fixed;
       background-size: cover;
       height: 100vh;
     }
-    .test2 {
+    .about {
       background: #1E1E20;
     }
     .portfolio {
@@ -26,7 +26,8 @@
     .contact ul li:nth-child(1) {
       padding-top: 15px;
     }
-    .contact ul li a {
+    .contact ul li a,
+    .about p a {
       text-decoration: none;
     }
     .name {
@@ -61,8 +62,11 @@
     .navbar li a {
       color: white;
     }
-    .navbar li a:hover, .navbar li a:active {
+    .navbar li a:hover {
       background: rgba(192,192,192,.4);
+    }
+    .navbar li a:visited {
+      background: rgba(192,192,192, 0.1);
     }
     .icon-bar {
       background: white;
